@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	min-width: 320px;
+	background-image: radial-gradient(
+		circle,
+		#f8c33c,
+		#f9bd33,
+		#fab629,
+		#fcb01f,
+		#fda914,
+		#fca115,
+		#fa9a17,
+		#f89219,
+		#f18823,
+		#ea7e2a,
+		#e27530,
+		#d96c34
+	);
+}
+
+.Header {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 80%;
+	text-align: center;
+	border-bottom: 1px solid #000;
+	max-width: 50rem;
+}
+.Header h1 {
+	font-weight: bolder;
+}
+.Main {
+	width: 100%;
+}
+
+.main__section {
+	margin: 0 auto;
+	max-width: 50rem;
+}
+
+.main__section button {
+	border: none;
+	padding: 10px 30px;
+	border-radius: 8px;
+	background-color: #d96c34;
+	margin: 0 auto;
+	margin-top: 20px;
+	display: block;
+	transition: padding 1s;
+}
+
+.main__section button:hover {
+	padding: 10px 40px;
+	transition: padding 0.3s;
+}
+
+.main__section svg {
+	margin-right: 8px;
+	margin-bottom: 4px;
+}
+
+.section--figure {
+	width: 80%;
+	min-height: 22rem;
+	max-height: 28rem;
+	display: flex;
+	margin: 0 auto;
+	border-radius: 8px;
+	margin-top: 20px;
+}
+.section--figure img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 8px;
 }
